@@ -189,7 +189,6 @@
       <div class="container-fluid well" style="margin-top:10px ;">
         <section id="technology">
           <h2 class="h1-responsive font-weight-bold text-center my-4">Skill sets</h2>
-          <!-- <div class="row"> -->
             <div class="col-sm-6 col-xs-6 col-md-6">
               <div class="progress">
                 <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
@@ -238,7 +237,6 @@
                 </div>
               </div>
             </div>
-          <!-- </div> -->
         </section>
       </div>
       <div class="container-fluid well" style="margin-top:10px ;">
@@ -308,7 +306,14 @@
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script>
           function contact() {
-            swal({
+            if(document.getElementById("name")!=""){
+              swal("Error!", "Please enter the name!", "error");
+            }else if(document.getElementById("email")!=""){
+              swal("Error!", "Please enter the Email!", "error");
+            }else if(document.getElementById("subject")!=""){
+              swal("Error!", "Please enter the Subject!", "error");
+            }else{
+              swal({
                 title: "Are you sure?",
                 text: "You want to notify me",
                 icon: "warning",
@@ -321,9 +326,11 @@
                     icon: "success",
                   });
                 } else {
-                  swal("ok fine");
+                  
+                  swal("ok fine",{icon : "info", });
                 }
               });
+            }
             }
         </script>
     </body>
