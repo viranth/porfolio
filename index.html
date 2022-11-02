@@ -306,10 +306,13 @@
           function contact() {
             if(document.getElementById("name")==""){
               swal("Error!", "Please enter the name!", "error");
+              return false;
             }else if(document.getElementById("email")==""){
               swal("Error!", "Please enter the Email!", "error");
+              return false;
             }else if(document.getElementById("subject")==""){
               swal("Error!", "Please enter the Subject!", "error");
+              return false;
             }else{
               swal({
                 title: "Are you sure?",
