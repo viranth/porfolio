@@ -304,11 +304,11 @@
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script>
           function contact() {
-            if(document.getElementById("name")!=""){
+            if(document.getElementById("name")==""){
               swal("Error!", "Please enter the name!", "error");
-            }else if(document.getElementById("email")!=""){
+            }else if(document.getElementById("email")==""){
               swal("Error!", "Please enter the Email!", "error");
-            }else if(document.getElementById("subject")!=""){
+            }else if(document.getElementById("subject")==""){
               swal("Error!", "Please enter the Subject!", "error");
             }else{
               swal({
