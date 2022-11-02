@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 </head>
@@ -27,8 +28,8 @@
 }
   </style>
 <body>
-    <nav class="navbar navbar-inverse col-xs-12 col-sm-12 col-md-12 navbar-fixed-top" home">
-        <div class="container-fluid">
+    <nav class="navbar navbar-inverse col-xs-12 col-sm-12 col-md-12 navbar-fixed-top">
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
@@ -66,45 +67,92 @@
           </div>
           <hr>
           <div class="mb-4 text-justify" style="display:block; margin :auto">
-            <h4>Hi, I’m Viranth, currently pursuing my bachelor degree in
+            <h4 class="w-responsive">Hi, I’m Viranth, currently pursuing my bachelor degree in
               National Engineering college, Kovilpatti.
              I'm a enthusiast programmer, developer,junior in developement process.</h4>
              <h4>Do you want know about me?</h4>
              <div class="d-flex justify-content-end row-md-4 row-sm-4 row-xs-4 well">
-              <a href="#" class="btn btn-success btn-lg"><i class="fa-solid fa-circle-arrow-right"></i>  click me</a>
+              <a href="#about" class="btn btn-success btn-lg"><i class="fa-solid fa-circle-arrow-right"></i>  click me</a>
              </div>            
           </div>
         </div>
       </div>
 
       <div class="container-fluid well" style="margin-top:10px ;">
-        <section id="about">
-          <div class="col-md-6 col-xs-6 col-sm-6">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div id="about">
+          <div class="col-md-8 col-xs-8 col-sm-8">
+            <p class=" w-responsive text-justify">
+              I'm from sattur near small village Unjampatti.I completed my schoolings in Government higher secondary school, padanthal
+            Now I pursuing bachelor degree in National Engineering college kovilpatti. Area of interest is backend-developer.
+            </p>
+            <div class="col-sm-8 col-md-8 col-xs-12 well">
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-xs-5">
+                    SSLC %
+                </div>
+                <div class="col-sm-8 col-md-8 col-xs-7">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                    aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width:91%">
+                      91%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-xs-5">
+                  HSC %
+                </div>
+                <div class="col-sm-8 col-md-8 col-xs-7">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                    aria-valuenow="71.02" aria-valuemin="0" aria-valuemax="100" style="width:71.02%">
+                      71.02%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-xs-5">
+                  CGPA %
+                </div>
+                <div class="col-sm-8 col-md-8 col-xs-7">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                    aria-valuenow="85.6" aria-valuemin="0" aria-valuemax="100" style="width:85.6%">
+                      85.6%
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="col-md-6 col-xs-6 col-sm-6">
-            <h2>My Farm land</h2>  
+        </div>
+      </div>
+          <div class="col-md-4 col-xs-4 col-sm-4">
+            <h5>My Farm land</h5>  
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
-          
-              <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="la.jpg" alt="" style="width:100%;">
+                  <img src="/images/7.jpg" alt="" class="img-responsive">
                 </div>
-          
                 <div class="item">
-                  <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+                  <img src="/images/3.jpg" alt="Chicago" class="img-responsive">
                 </div>
-              
+
                 <div class="item">
-                  <img src="ny.jpg" alt="New york" style="width:100%;">
+                  <img src="/images/4.jpg" alt="Chicago" class="img-responsive">
                 </div>
+
+                <div class="item">
+                  <img src="/images/5.jpg" alt="Chicago" class="img-responsive">
+                </div>
+
               </div>
               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -116,23 +164,147 @@
               </a>
             </div>
           </div>
-        </section>
+        </div>
       </div>
       <div class="container-fluid well" style="margin-top:10px ;">
         <section id="project">
-          
+          <h2 class="h1-responsive font-weight-bold text-center my-4">projects</h2>
+          <div class="w-responsive">
+            <div class="col-md-12 text-center">
+            TITLE : Develop a web application for Keyword searching using
+                HTML, CSS, JavaScript, Java<br>
+                GUIDE : Ms.Anitha V AP/IT<br>
+                <strong> Technology Used :</strong><br>
+                <li>
+                  <ol>1.JSP and SERVLET</ol>
+                  <ol>2.MySQL</ol>
+                  <ol>3.Xampp server</ol>
+                  <ol>4.Eclipse IDE</ol>
+                </li>
+                project source code : <a href="https://github.com/viranth/Project---1" class="btn btn-success btn-sm"><i class="fa-solid fa-circle-arrow-right"></i>  click me</a>
+              </div>
+          </div>
         </section>
       </div>
       <div class="container-fluid well" style="margin-top:10px ;">
         <section id="technology">
-          
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Skill sets</h2>
+          <!-- <div class="row"> -->
+            <div class="col-sm-6 col-xs-6 col-md-6">
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  C
+                </div>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-light  progress-bar-striped active" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    Java
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-dark  progress-bar-striped active" role="progressbar"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                      DBMS
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 col-md-6">
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                  python
+                </div>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                    Web developement
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      Frame work - Bootstrap 5
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
         </section>
       </div>
       <div class="container-fluid well" style="margin-top:10px ;">
         <section id="contact">
-          
+<section class="mb-4">
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly.</p>
+  <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" method="POST" class="mb-3">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <label for="name" class="">Your name</label>
+                          <input type="text" id="name" name="name" class="form-control">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <label for="email" class="">Your email</label>
+                          <input type="text" id="email" name="email" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <label for="subject" class="">Subject</label>
+                          <input type="text" id="subject" name="subject" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form">
+                        <label for="message">Your message</label>
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </form><br>
+          <div class="mb-3 text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>3/45,North street, Unjamptti, Sattur-626203, India</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+91 8248459099</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>viranthrocky@gmail.com</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+</section>
         </section>
       </div>
-      
+        
     </body>
 </html>
